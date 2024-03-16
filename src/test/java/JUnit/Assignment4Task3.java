@@ -3,8 +3,10 @@ package JUnit;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -22,12 +24,14 @@ public class Assignment4Task3 {
         driver.get("https://www.google.com/");
 
         // search for "Scroll Methods" by using an Actions object
+
+        WebElement searchInput = driver.findElement(By.name("q"));
         Actions actions = new Actions(driver);
 
-        actions.sendKeys(Keys.PAGE_DOWN).perform();
-        Thread.sleep(3000);
-
-        actions.sendKeys(Keys.PAGE_UP).perform();
+        actions.moveToElement(searchInput).click().keyDown(Keys.SHIFT)
+                .sendKeys("s").keyUp(Keys.SHIFT).sendKeys("croll").sendKeys(Keys.SPACE)
+                .keyDown(Keys.SHIFT).sendKeys("m").keyUp(Keys.SHIFT).sendKeys("ethods").sendKeys(Keys.ENTER)
+                .build().perform();
 
     }
 
