@@ -25,12 +25,12 @@ public class Assignment4Task7 {
         // Take Full Page Screenshot.
         TakesScreenshot ss = (TakesScreenshot)driver;
         File ssFile = ss.getScreenshotAs(OutputType.FILE);
-        FieldUtils.copyFile(ssFile,new File("C:\\Users\\Talal\\IdeaProjects\\Assignment\\test-output\\fullScreenshot\\screenshot.png"));
+        //FieldUtils.copyFile(ssFile,new File("C:\\Users\\Talal\\IdeaProjects\\Assignment\\test-output\\fullScreenshot\\screenshot.png"));
 
         // Take any spesific WebElement ScreenShot
         WebElement amazonImage = driver.findElement(By.id("nav-logo-sprites"));
         File amazonImageSS = amazonImage.getScreenshotAs(OutputType.FILE);
-        FieldUtils.copyFile(amazonImageSS,new File("C:\\Users\\Talal\\IdeaProjects\\Assignment\\test-output\\screenshot\\webElementScreenshot.png"));
+       // FieldUtils.copyFile(amazonImageSS,new File("C:\\Users\\Talal\\IdeaProjects\\Assignment\\test-output\\screenshot\\webElementScreenshot.png"));
     }
 
     @BeforeEach
