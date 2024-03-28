@@ -26,26 +26,18 @@
             <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
-        <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>1.0.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.9.0</version>
-            <scope>test</scope>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.json/json -->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20240303</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.23.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
         <dependency>
@@ -53,9 +45,38 @@
             <artifactId>extentreports</artifactId>
             <version>5.1.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.9.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit4</artifactId>
+            <version>2.26.0</version>
+            <scope>test</scope>
+        </dependency><!-- SLF4J API dependency -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version> <!-- or the latest version -->
+        </dependency>
 
-
-
+        <!-- Logback implementation dependency -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.6</version> <!-- or the latest version -->
+        </dependency>
     </dependencies>
 
 </project>
